@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RisingFlipMeter">
+        <attr name="dot_visible" format="integer"/>
+        <attr name="comma_visible" format="integer"/>
+        <attr name="digit" format="integer"/>
+    </declare-styleable>
+</resources>
