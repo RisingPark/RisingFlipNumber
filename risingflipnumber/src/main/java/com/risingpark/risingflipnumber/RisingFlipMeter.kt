@@ -15,12 +15,9 @@ class RisingFlipMeter : LinearLayout {
 
     private var mIsVisibleDot = View.GONE
     private var mIsVisibleComma = View.GONE
-    private var mDot: LinearLayout? = null
-    private var mComma: LinearLayout? = null
     private var mDigit = 6
     private var preProgress:Long = 0
     private var items = ArrayList<FlipmeterSpinner>()
-    private var preNumbers = ArrayList<Int>()
 
     constructor(context: Context?) : super(context) {
         initialize()
@@ -68,12 +65,6 @@ class RisingFlipMeter : LinearLayout {
         li = context.getSystemService(infService) as LayoutInflater
         li.inflate(R.layout.widget_flipmeter, this, true)
 
-//        mDot!!.visibility = mIsVisibleDot
-//        mComma!!.visibility = mIsVisibleComma
-
-//        mDot = findViewById<View>(R.id.widget_flipmeter_dot) as LinearLayout
-//        mComma = findViewById<View>(R.id.widget_flipmeter_comma) as LinearLayout
-
         for (i in 0 until mDigit) {
             val flip = FlipmeterSpinner(context)
             widget_flip_meter_layout.addView(flip)
@@ -92,7 +83,6 @@ class RisingFlipMeter : LinearLayout {
 
     fun clear() {
         preProgress = 0;
-        preNumbers.clear()
         for (digitSpinner in items) {
             digitSpinner.setDigit(0, false)
         }
