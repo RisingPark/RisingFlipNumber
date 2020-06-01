@@ -12,6 +12,7 @@
         android:id="@+id/flip_meter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:visible_comma="false"
         app:digit="7"/>
 
     <LinearLayout
