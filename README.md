@@ -1,5 +1,5 @@
 # RisingFlipNumber
-Flip number view for android
+Flip number view for android 0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣
 
 
 ## Usage
