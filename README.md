@@ -4,6 +4,7 @@
 
 Flip number view for android 
 
+![Recording_2020-06-01-17-57-20](https://user-images.githubusercontent.com/62924824/83393602-0193b980-a432-11ea-83eb-da788f81ce85.gif)
 
 ## Usage
 
