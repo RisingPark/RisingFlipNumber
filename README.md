@@ -36,9 +36,9 @@ dependencies {
 
 ### In code
 
-Setting Number data
+Setting Number data.
 ```kotlin
-flip_meter.setValue(getNumber(), true)
+flip_meter.setValue(12345, true)
 ```
 Initialize all number 0
 ```kotlin
