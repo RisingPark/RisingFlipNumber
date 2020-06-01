@@ -1,64 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+<HorizontalScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/widget_flip_meter_layout"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/widget_flip_meter_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
 
-<!--    <com.risingpark.risingflipnumber.FlipmeterSpinner-->
-<!--        android:id="@+id/widget_flipmeter_spinner_100k"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content" />-->
-
-<!--    <com.risingpark.risingflipnumber.FlipmeterSpinner-->
-<!--        android:id="@+id/widget_flipmeter_spinner_10k"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content" />-->
-
-<!--    <com.risingpark.risingflipnumber.FlipmeterSpinner-->
-<!--        android:id="@+id/widget_flipmeter_spinner_1k"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content" />-->
-
-<!--    <LinearLayout-->
-<!--        android:id="@+id/widget_flipmeter_comma"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginLeft="5dp"-->
-<!--        android:layout_marginRight="5dp"-->
-<!--        android:orientation="vertical"-->
-<!--        android:background="@drawable/comma"-->
-<!--        android:layout_gravity="bottom"-->
-<!--        android:visibility="gone"-->
-<!--        />-->
-
-<!--    <LinearLayout-->
-<!--        android:id="@+id/widget_flipmeter_dot"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginLeft="5dp"-->
-<!--        android:layout_marginRight="5dp"-->
-<!--        android:layout_marginBottom="10dp"-->
-<!--        android:orientation="vertical"-->
-<!--        android:background="@drawable/dot"-->
-<!--        android:layout_gravity="bottom"-->
-<!--        android:visibility="gone"-->
-<!--        />-->
-
-<!--    <com.risingpark.risingflipnumber.FlipmeterSpinner-->
-<!--        android:id="@+id/widget_flipmeter_spinner_100"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content" />-->
-
-<!--    <com.risingpark.risingflipnumber.FlipmeterSpinner-->
-<!--        android:id="@+id/widget_flipmeter_spinner_10"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content" />-->
-
-<!--    <com.risingpark.risingflipnumber.FlipmeterSpinner-->
-<!--        android:id="@+id/widget_flipmeter_spinner_1"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content" />-->
-
-</LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>

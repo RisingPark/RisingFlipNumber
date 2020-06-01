@@ -17,7 +17,7 @@
         android:layout_height="36.25dp"
         android:layout_below="@+id/FlipMeterSpinner_image_back_upper"
         android:src="@drawable/digit_0_lower" />
-
+f
     <ImageView
         android:id="@+id/FlipMeterSpinner_image_front_upper"
         android:layout_width="47.5dp"

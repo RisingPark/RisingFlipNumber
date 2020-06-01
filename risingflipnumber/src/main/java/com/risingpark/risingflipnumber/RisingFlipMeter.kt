@@ -13,8 +13,8 @@ import kotlin.math.pow
 
 class RisingFlipMeter : LinearLayout {
 
-    private var mIsVisibleDot = View.GONE
-    private var mIsVisibleComma = View.GONE
+    private val mMaxDigit = 8
+    private var mIsVisibleComma = false
     private var mDigit = 6
     private var preProgress:Long = 0
     private var items = ArrayList<FlipmeterSpinner>()
@@ -51,25 +51,31 @@ class RisingFlipMeter : LinearLayout {
     }
 
     private fun setTypeArray(typedArray: TypedArray) {
-        mIsVisibleDot = typedArray.getInt(R.styleable.RisingFlipMeter_dot_visible, View.GONE)
-        mIsVisibleComma = typedArray.getInt(R.styleable.RisingFlipMeter_comma_visible, View.GONE)
+        mIsVisibleComma = typedArray.getBoolean(R.styleable.RisingFlipMeter_visible_comma, mIsVisibleComma)
         mDigit = typedArray.getInt(R.styleable.RisingFlipMeter_digit, mDigit)
         typedArray.recycle()
     }
 
     private fun initialize() {
-
-        // Inflate the view from the layout resource.
-        val infService = Context.LAYOUT_INFLATER_SERVICE
-        val li: LayoutInflater
-        li = context.getSystemService(infService) as LayoutInflater
-        li.inflate(R.layout.widget_flipmeter, this, true)
-
+        LayoutInflater.from(context).inflate(R.layout.widget_flipmeter, this, true)
+        if(mDigit > mMaxDigit){
+            mDigit = mMaxDigit
+        }
+        //add Digit
         for (i in 0 until mDigit) {
             val flip = FlipmeterSpinner(context)
             widget_flip_meter_layout.addView(flip)
             items.add(flip)
         }
+        // add Comma
+        if (mIsVisibleComma)
+            for (i in 0 until mDigit) {
+                if (mDigit > 3
+                    && i != 0
+                    && i%3 == 0) {
+                    widget_flip_meter_layout.addView(CommaView(context), mDigit-i)
+                }
+            }
     }
 
     fun setValue(value: Long, withAnimation: Boolean) {
@@ -106,7 +112,7 @@ class RisingFlipMeter : LinearLayout {
                     if (i == num.toString().length-1){
                         num / (10.toDouble().pow(i.toDouble())).toInt()
                     } else{
-                        var tenNum = (10.toDouble().pow((i+1).toDouble())).toInt()
+                        val tenNum = (10.toDouble().pow((i+1).toDouble())).toInt()
                         (num % tenNum) / (tenNum/10)
                     }
                 }

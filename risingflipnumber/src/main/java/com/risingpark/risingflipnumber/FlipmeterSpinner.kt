@@ -9,11 +9,7 @@ import android.widget.RelativeLayout
 class FlipmeterSpinner : RelativeLayout {
 
     var flipmeterSpinner: View? = null
-        private set
-    val currentDigit = 0
     private var flipNumber: FlipNumber? = null
-    private val isRunning = false
-
 
     constructor(context: Context) : super(context) {
         initialize()
