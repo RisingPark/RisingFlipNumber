@@ -51,6 +51,8 @@ Initialize all number 0
 flip_meter.clear()
 ```
 
+# License
+https://appdistribution.firebase.dev/i/23d388aea8240b6f
 
 # License
 ```xml
