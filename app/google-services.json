@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "97480993766",
+    "firebase_url": "https://risingflipnumber.firebaseio.com",
+    "project_id": "risingflipnumber",
+    "storage_bucket": "risingflipnumber.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97480993766:android:4f5315890307c79dd24427",
+        "android_client_info": {
+          "package_name": "com.risingpark.flipnumber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "97480993766-n5qvn8m7ckdi2a7krmtaj8odpq8bm2n5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOUEdosCdoy9Jd-rXqVLNxRLtoWM4Trq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "97480993766-n5qvn8m7ckdi2a7krmtaj8odpq8bm2n5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
